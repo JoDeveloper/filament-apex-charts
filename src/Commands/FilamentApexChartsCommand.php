@@ -1,6 +1,6 @@
 <?php
 
-namespace Leandrocfe\FilamentApexCharts\Commands;
+namespace Jodeveloper\FilamentApexCharts\Commands;
 
 use Filament\Facades\Filament;
 use Filament\Panel;
@@ -115,7 +115,7 @@ class FilamentApexChartsCommand extends Command
                 label: 'Where would you like to create this?',
                 options: array_unique([
                     ...array_map(
-                        fn (Panel $panel): string => "The [{$panel->getId()}] panel",
+                        fn(Panel $panel): string => "The [{$panel->getId()}] panel",
                         $panels,
                     ),
                     $namespace => "[{$namespace}] alongside other Livewire components",
@@ -139,11 +139,9 @@ class FilamentApexChartsCommand extends Command
                 select(
                     label: 'Which namespace would you like to create this in?',
                     options: $widgetNamespaces,
-                ) :
-                (Arr::first($widgetNamespaces) ?? 'App\\Filament\\Widgets');
+                ) : (Arr::first($widgetNamespaces) ?? 'App\\Filament\\Widgets');
             $path = (count($widgetDirectories) > 1) ?
-                $widgetDirectories[array_search($namespace, $widgetNamespaces)] :
-                (Arr::first($widgetDirectories) ?? app_path('Filament/Widgets/'));
+                $widgetDirectories[array_search($namespace, $widgetNamespaces)] : (Arr::first($widgetDirectories) ?? app_path('Filament/Widgets/'));
         } else {
             $resourceDirectories = $panel->getResourceDirectories();
             $resourceNamespaces = $panel->getResourceNamespaces();
@@ -152,17 +150,15 @@ class FilamentApexChartsCommand extends Command
                 select(
                     label: 'Which namespace would you like to create this in?',
                     options: $resourceNamespaces,
-                ) :
-                (Arr::first($resourceNamespaces) ?? 'App\\Filament\\Resources');
+                ) : (Arr::first($resourceNamespaces) ?? 'App\\Filament\\Resources');
             $resourcePath = (count($resourceDirectories) > 1) ?
-                $resourceDirectories[array_search($resourceNamespace, $resourceNamespaces)] :
-                (Arr::first($resourceDirectories) ?? app_path('Filament/Resources/'));
+                $resourceDirectories[array_search($resourceNamespace, $resourceNamespaces)] : (Arr::first($resourceDirectories) ?? app_path('Filament/Resources/'));
         }
 
         if ($path) {
             $this->makeDirectory($path);
             $contents = $this->getSourceFile($namespace, $widget, $chartType);
-            $file = $path.'/'.$widget.'.php';
+            $file = $path . '/' . $widget . '.php';
             if ($this->files->exists($file)) {
                 $this->error("File : {$file} already exits!");
                 exit();
@@ -179,11 +175,11 @@ class FilamentApexChartsCommand extends Command
             }
         } elseif ($resourcePath) {
 
-            $this->makeDirectory($resourcePath.'/'.$resourceClass.'/Widgets');
+            $this->makeDirectory($resourcePath . '/' . $resourceClass . '/Widgets');
 
-            $contents = $this->getSourceFile($resourceNamespace.'\\'.$resourceClass.'\\Widgets', $widget, $chartType);
+            $contents = $this->getSourceFile($resourceNamespace . '\\' . $resourceClass . '\\Widgets', $widget, $chartType);
 
-            $file = $resourcePath.'/'.$resourceClass.'/Widgets/'.$widget.'.php';
+            $file = $resourcePath . '/' . $resourceClass . '/Widgets/' . $widget . '.php';
 
             if ($this->files->exists($file)) {
                 $this->error("File : {$file} already exits!");
@@ -257,7 +253,7 @@ class FilamentApexChartsCommand extends Command
         $contents = file_get_contents($stub);
 
         foreach ($stubVariables as $search => $replace) {
-            $contents = Str::of($contents)->replace('$'.$search.'$', $replace);
+            $contents = Str::of($contents)->replace('$' . $search . '$', $replace);
         }
 
         return $contents;
@@ -282,13 +278,13 @@ class FilamentApexChartsCommand extends Command
     {
         if ($this->confirm('Would you like to show some love by starring the repo?', true)) {
             if (PHP_OS_FAMILY == 'Darwin') {
-                exec('open https://github.com/leandrocfe/filament-apex-charts');
+                exec('open https://github.com/Jodeveloper/filament-apex-charts');
             }
             if (PHP_OS_FAMILY == 'Windows') {
-                exec('start https://github.com/leandrocfe/filament-apex-charts');
+                exec('start https://github.com/Jodeveloper/filament-apex-charts');
             }
             if (PHP_OS_FAMILY == 'Linux') {
-                exec('xdg-open https://github.com/leandrocfe/filament-apex-charts');
+                exec('xdg-open https://github.com/Jodeveloper/filament-apex-charts');
             }
 
             $this->line('Thanks! :)');

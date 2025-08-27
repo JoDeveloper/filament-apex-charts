@@ -2,7 +2,7 @@
 
 namespace $NAMESPACE$;
 
-use Leandrocfe\FilamentApexCharts\Widgets\ApexChartWidget;
+use Jodeveloper\FilamentApexCharts\Widgets\ApexChartWidget;
 
 class $CLASS_NAME$ extends ApexChartWidget
 {

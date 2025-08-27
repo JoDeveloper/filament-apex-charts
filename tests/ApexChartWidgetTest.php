@@ -1,6 +1,6 @@
 <?php
 
-use Leandrocfe\FilamentApexCharts\Widgets\ApexChartWidget;
+use Jodeveloper\FilamentApexCharts\Widgets\ApexChartWidget;
 
 beforeEach(function () {
     $this->className = ApexChartWidget::class;

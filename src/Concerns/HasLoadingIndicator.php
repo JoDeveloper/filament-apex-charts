@@ -1,6 +1,6 @@
 <?php
 
-namespace Leandrocfe\FilamentApexCharts\Concerns;
+namespace Jodeveloper\FilamentApexCharts\Concerns;
 
 trait HasLoadingIndicator
 {

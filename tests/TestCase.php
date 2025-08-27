@@ -1,8 +1,8 @@
 <?php
 
-namespace Leandrocfe\FilamentApexCharts\Tests;
+namespace Jodeveloper\FilamentApexCharts\Tests;
 
-use Leandrocfe\FilamentApexCharts\FilamentApexChartsServiceProvider;
+use Jodeveloper\FilamentApexCharts\FilamentApexChartsServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra

@@ -1,6 +1,6 @@
 <?php
 
-// config for Leandrocfe/FilamentApexCharts
+// config for Jodeveloper/FilamentApexCharts
 return [
 
     // command options

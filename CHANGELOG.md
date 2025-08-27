@@ -185,7 +185,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
     -   [Online Filament Project Example](https://filament-apex-charts-demo.leandroferreira.dev.br/)
 
-    -   [Github Filament Project Example](https://github.com/leandrocfe/filament-apex-charts-demo)
+    -   [Github Filament Project Example](https://github.com/Jodeveloper/filament-apex-charts-demo)
 
 ### Changed
 
@@ -200,7 +200,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 
--   Bug - stub path for non-Windows environments commented by [jcandan](https://github.com/jcandan) in [#1](https://github.com/leandrocfe/filament-apex-charts/issues/1)
+-   Bug - stub path for non-Windows environments commented by [jcandan](https://github.com/jcandan) in [#1](https://github.com/Jodeveloper/filament-apex-charts/issues/1)
 
 ## 0.1.1
 

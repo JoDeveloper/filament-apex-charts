@@ -1,5 +1,5 @@
 <?php
 
-namespace Leandrocfe\FilamentApexCharts;
+namespace Jodeveloper\FilamentApexCharts;
 
 class FilamentApexCharts {}

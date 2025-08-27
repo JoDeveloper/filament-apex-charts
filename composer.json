@@ -1,25 +1,25 @@
 {
-    "name": "leandrocfe/filament-apex-charts",
+    "name": "jodeveloper/filament-apex-charts",
     "description": "Apex Charts integration for Filament PHP.",
     "keywords": [
-        "leandrocfe",
+        "joseph",
         "laravel",
         "filament-apex-charts",
         "apexcharts"
     ],
-    "homepage": "https://github.com/leandrocfe/filament-apex-charts",
+    "homepage": "https://github.com/jodeveloper/filament-apex-charts",
     "license": "MIT",
     "authors": [
         {
-            "name": "Leandro Costa Ferreira",
-            "email": "leandrocfe@gmail.com",
+            "name": "yousuf omer",
+            "email": "null@null.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.2",
-        "filament/widgets": "^v4.0.0-beta10",
-        "filament/forms": "^v4.0.0-beta10",
+        "filament/widgets": "^v4.0.3",
+        "filament/forms": "^v4.0.3",
         "illuminate/contracts": "^11.0|^12.0",
         "livewire/livewire": "^3.0",
         "spatie/laravel-package-tools": "^1.13.0"
@@ -38,12 +38,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Leandrocfe\\FilamentApexCharts\\": "src"
+            "Jodeveloper\\FilamentApexCharts\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Leandrocfe\\FilamentApexCharts\\Tests\\": "tests"
+            "Jodeveloper\\FilamentApexCharts\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -63,10 +63,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Leandrocfe\\FilamentApexCharts\\FilamentApexChartsServiceProvider"
+                "Jodeveloper\\FilamentApexCharts\\FilamentApexChartsServiceProvider"
             ],
             "aliases": {
-                "FilamentApexCharts": "Leandrocfe\\FilamentApexCharts\\Facades\\FilamentApexCharts"
+                "FilamentApexCharts": "Jodeveloper\\FilamentApexCharts\\Facades\\FilamentApexCharts"
             }
         }
     },

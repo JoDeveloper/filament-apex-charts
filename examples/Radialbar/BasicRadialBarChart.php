@@ -2,7 +2,7 @@
 
 namespace App\Filament\Widgets;
 
-use Leandrocfe\FilamentApexCharts\Widgets\ApexChartWidget;
+use Jodeveloper\FilamentApexCharts\Widgets\ApexChartWidget;
 
 class BasicRadialBarChart extends ApexChartWidget
 {

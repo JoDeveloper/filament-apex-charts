@@ -2,22 +2,22 @@
 
 [Apex Charts](https://apexcharts.com/) integration for [Filament](https://filamentphp.com/)
 
-![dashboard image demo](https://raw.githubusercontent.com/leandrocfe/filament-apex-charts/master/screenshots/v3-dark-5088.jpg)
+![dashboard image demo](https://raw.githubusercontent.com/Jodeveloper/filament-apex-charts/master/screenshots/v3-dark-5088.jpg)
 
-[Filament demo with ApexCharts](https://github.com/leandrocfe/filament-demo/tree/apex-charts-plugin-v3)
+[Filament demo with ApexCharts](https://github.com/Jodeveloper/filament-demo/tree/apex-charts-plugin-v3)
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require leandrocfe/filament-apex-charts:"^3.1"
+composer require Jodeveloper/filament-apex-charts:"^3.1"
 ```
 
 Register the plugin for the Filament Panels you want to use:
 
 ```php
-use Leandrocfe\FilamentApexCharts\FilamentApexChartsPlugin;
+use Jodeveloper\FilamentApexCharts\FilamentApexChartsPlugin;
 public function panel(Panel $panel): Panel
 {
     return $panel
@@ -27,7 +27,7 @@ public function panel(Panel $panel): Panel
 }
 ```
 
-**Filament V2** - if you are using Filament v2.x, you can use [this section](https://github.com/leandrocfe/filament-apex-charts/tree/2.0.2)
+**Filament V2** - if you are using Filament v2.x, you can use [this section](https://github.com/Jodeveloper/filament-apex-charts/tree/2.0.2)
 
 ## Usage
 
@@ -68,7 +68,7 @@ This command will create the **BlogPostsChart.php** file in _app\Filament\Widget
 ```php
 namespace App\Filament\Widgets;
 
-use Leandrocfe\FilamentApexCharts\Widgets\ApexChartWidget;
+use Jodeveloper\FilamentApexCharts\Widgets\ApexChartWidget;
 
 class BlogPostsChart extends ApexChartWidget
 {
@@ -136,7 +136,7 @@ The `getOptions()` method is used to return an array of options based on [Apex C
 
 ## Examples
 
--   [Filament demo with ApexCharts](https://github.com/leandrocfe/filament-demo/tree/apex-charts-plugin-v3)
+-   [Filament demo with ApexCharts](https://github.com/Jodeveloper/filament-demo/tree/apex-charts-plugin-v3)
 
 ## Setting a widget title
 
@@ -510,11 +510,11 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within this package, please send an e-mail to <leandrocfe@gmail.com>.
+If you discover a security vulnerability within this package, please send an e-mail to <Jodeveloper@gmail.com>.
 
 ## Credits
 
--   [Leandro Costa Ferreira](https://github.com/leandrocfe)
+-   [Leandro Costa Ferreira](https://github.com/Jodeveloper)
 -   [All Contributors](../../contributors)
 
 ## License

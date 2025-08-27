@@ -1,6 +1,6 @@
 <?php
 
-namespace Leandrocfe\FilamentApexCharts\Components;
+namespace Jodeveloper\FilamentApexCharts\Components;
 
 use Illuminate\View\Component;
 

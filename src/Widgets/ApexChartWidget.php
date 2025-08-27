@@ -1,6 +1,6 @@
 <?php
 
-namespace Leandrocfe\FilamentApexCharts\Widgets;
+namespace Jodeveloper\FilamentApexCharts\Widgets;
 
 use Filament\Forms\Contracts\HasForms;
 use Filament\Support\RawJs;
@@ -8,13 +8,13 @@ use Filament\Widgets\Concerns\CanPoll;
 use Filament\Widgets\Widget;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Str;
-use Leandrocfe\FilamentApexCharts\Concerns\CanDeferLoading;
-use Leandrocfe\FilamentApexCharts\Concerns\CanFilter;
-use Leandrocfe\FilamentApexCharts\Concerns\HasContentHeight;
-use Leandrocfe\FilamentApexCharts\Concerns\HasDarkMode;
-use Leandrocfe\FilamentApexCharts\Concerns\HasFooter;
-use Leandrocfe\FilamentApexCharts\Concerns\HasHeader;
-use Leandrocfe\FilamentApexCharts\Concerns\HasLoadingIndicator;
+use Jodeveloper\FilamentApexCharts\Concerns\CanDeferLoading;
+use Jodeveloper\FilamentApexCharts\Concerns\CanFilter;
+use Jodeveloper\FilamentApexCharts\Concerns\HasContentHeight;
+use Jodeveloper\FilamentApexCharts\Concerns\HasDarkMode;
+use Jodeveloper\FilamentApexCharts\Concerns\HasFooter;
+use Jodeveloper\FilamentApexCharts\Concerns\HasHeader;
+use Jodeveloper\FilamentApexCharts\Concerns\HasLoadingIndicator;
 
 class ApexChartWidget extends Widget implements HasForms
 {
@@ -61,7 +61,7 @@ class ApexChartWidget extends Widget implements HasForms
      */
     protected function getChartId(): ?string
     {
-        return static::$chartId ?? 'apexChart_'.Str::random(10);
+        return static::$chartId ?? 'apexChart_' . Str::random(10);
     }
 
     /**
