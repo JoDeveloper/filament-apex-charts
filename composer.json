@@ -70,6 +70,6 @@
             }
         }
     },
-    "minimum-stability": "main",
+    "minimum-stability": "stable",
     "prefer-stable": true
 }
