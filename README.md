@@ -11,7 +11,7 @@
 You can install the package via composer:
 
 ```bash
-composer require Jodeveloper/filament-apex-charts:"^3.1"
+composer require Jodeveloper/filament-apex-charts
 ```
 
 Register the plugin for the Filament Panels you want to use:
