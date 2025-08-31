@@ -27,7 +27,6 @@ public function panel(Panel $panel): Panel
 }
 ```
 
-**Filament V2** - if you are using Filament v2.x, you can use [this section](https://github.com/Jodeveloper/filament-apex-charts/tree/2.0.2)
 
 ## Usage
 
