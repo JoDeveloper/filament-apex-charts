@@ -4,8 +4,6 @@
 
 ![dashboard image demo](https://raw.githubusercontent.com/leandrocfe/filament-apex-charts/master/screenshots/v3-dark-5088.jpg)
 
-[Filament demo with ApexCharts](https://github.com/leandrocfe/filament-demo/tree/apex-charts-plugin-v3)
-
 ## Installation
 
 You can install the package via composer:
